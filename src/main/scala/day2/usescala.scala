@@ -26,7 +26,7 @@ object usescala {
     val it = list0.grouped(4)
 //    println(it.toBuffer)
 
-    //境Iterator转换成list
+    //将Iterator转换成list
     val list5 = it.toList
     println(list5.toBuffer)
 
@@ -43,6 +43,51 @@ object usescala {
     val result = lines.flatMap(_.split(" "))
     println(result)
 
+    //并行计算求和
+    val arr = Array(1,2,3,4,5,6,7,8,9,10)
+
+//    val res = arr.sum
+    //并行执行，和线程有关，每个线程计算一部分
+//    val res = arr.par.sum
+//    println(res)
+
+    //按照特定的顺序进行聚合
+//    val res = arr.reduce(_ + _)
+
+    //并行执行
+    val res = arr.par.reduce(_ + _)
+    println(res)
+
+    //折叠，有初始值，无特定顺序
+    val res1 = arr.par.fold(10)(_ + _)
+    println(res1)
+
+    //折叠，有初始值，有特定顺序
+//    val res2 = arr.fold(10)(_ + _)
+    val res2 = arr.foldLeft(10)(_ + _)
+    println(res2)
+
+    //聚合
+    val list7 = List(List(1,2,3),List(3,4,5),List(2),List(0))
+//    val res3 = list7.flatten.reduce(_ + _)
+    val res3 = list7.aggregate(0)(_+_.sum,_+_)
+    println(res3)
+
+    val l1 = List(5,6,4,7)
+    val l2 = List(1,2,3,4)
+
+    //求并集
+    val res4 = l1 union l2
+    println(res4)
+
+    //求交集
+    val res5 = l1 intersect l2
+    println(res5)
+
+    //求差集
+    val res6 = l1 diff l2
+    println(res6)
+    println(l2 diff l1)
 
   }
 }
