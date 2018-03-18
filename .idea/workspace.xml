@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="210a9410-e18f-462e-b46e-343766aa4924" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/matchcase/PartialFunctionDemo.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/matchcase/Context.scala" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/matchcase/CurryingDemo.scala" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -66,11 +67,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PartialFunctionDemo.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PartialFunctionDemo.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/matchcase/PartialFunctionDemo.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
               <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CurryingDemo.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/matchcase/CurryingDemo.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Context.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/matchcase/Context.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -86,31 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrivateDemo.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/objectorient/PrivateDemo.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="43" lean-forward="false" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ClassDemo.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/objectorient/ClassDemo.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
               <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StructDemo.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/objectorient/StructDemo.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -167,6 +168,8 @@
         <option value="$PROJECT_DIR$/src/main/scala/matchcase/MatchList.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/matchcase/CaseClassDemo.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/matchcase/PartialFunctionDemo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/matchcase/Context.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/matchcase/CurryingDemo.scala" />
       </list>
     </option>
   </component>
@@ -254,7 +257,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PartialFunctionDemo">
+  <component name="RunManager" selected="Application.CurryingDemo">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -281,14 +284,14 @@
       <module name="myscala" />
       <envs />
     </configuration>
-    <configuration name="MatchList" type="Application" factoryName="Application" temporary="true">
+    <configuration name="CurryingDemo" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="matchcase.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="matchcase.MatchList" />
+      <option name="MAIN_CLASS_NAME" value="matchcase.CurryingDemo" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -300,14 +303,14 @@
       <module name="myscala" />
       <envs />
     </configuration>
-    <configuration name="MatchStr" type="Application" factoryName="Application" temporary="true">
+    <configuration name="MatchList" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="matchcase.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="matchcase.MatchStr" />
+      <option name="MAIN_CLASS_NAME" value="matchcase.MatchList" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -432,19 +435,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.MatchStr" />
-      <item index="1" class="java.lang.String" itemvalue="Application.MatchType" />
-      <item index="2" class="java.lang.String" itemvalue="Application.MatchList" />
-      <item index="3" class="java.lang.String" itemvalue="Application.CaseClassDemo" />
-      <item index="4" class="java.lang.String" itemvalue="Application.PartialFunctionDemo" />
+      <item index="0" class="java.lang.String" itemvalue="Application.MatchType" />
+      <item index="1" class="java.lang.String" itemvalue="Application.MatchList" />
+      <item index="2" class="java.lang.String" itemvalue="Application.CaseClassDemo" />
+      <item index="3" class="java.lang.String" itemvalue="Application.PartialFunctionDemo" />
+      <item index="4" class="java.lang.String" itemvalue="Application.CurryingDemo" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.PartialFunctionDemo" />
-        <item index="1" class="java.lang.String" itemvalue="Application.CaseClassDemo" />
-        <item index="2" class="java.lang.String" itemvalue="Application.MatchList" />
-        <item index="3" class="java.lang.String" itemvalue="Application.MatchType" />
-        <item index="4" class="java.lang.String" itemvalue="Application.MatchStr" />
+        <item index="0" class="java.lang.String" itemvalue="Application.CurryingDemo" />
+        <item index="1" class="java.lang.String" itemvalue="Application.PartialFunctionDemo" />
+        <item index="2" class="java.lang.String" itemvalue="Application.CaseClassDemo" />
+        <item index="3" class="java.lang.String" itemvalue="Application.MatchList" />
+        <item index="4" class="java.lang.String" itemvalue="Application.MatchType" />
       </list>
     </recent_temporary>
   </component>
@@ -530,7 +533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521377900067</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="偏函数">
+      <created>1521378363236</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1521378363236</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -549,7 +559,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3638889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2361111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -576,28 +586,14 @@
     <MESSAGE value="模式匹配，匹配类型" />
     <MESSAGE value="模式匹配，匹配数组，元组，集合" />
     <MESSAGE value="模式匹配，匹配类型demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="模式匹配，匹配类型demo" />
+    <MESSAGE value="偏函数" />
+    <option name="LAST_COMMIT_MESSAGE" value="偏函数" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/objectorient/ClassDemo.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/day2/array.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/day2/map.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -952,6 +948,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/matchcase/Context.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/matchcase/CurryingDemo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
           <folding />
         </state>
       </provider>
