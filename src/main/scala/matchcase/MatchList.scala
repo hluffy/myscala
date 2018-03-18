@@ -31,6 +31,7 @@ object MatchList {
         list1 match {
             case 0 :: Nil => println("case1: 0")
             case a :: b :: c :: d :: Nil => println(s"case2: $a,$b,$c,$d")
+            //case List(0,a,b,c) => println(s"case2: $a,$b,$c")
             case 0 :: a => println(s"case3: $a")
             case _ => println("Match nothing")
         }
